@@ -1,76 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact - Flash Hub</title>
+<title>Contact</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-  margin:0;
-  font-family:Arial;
-  background:#0a0a0a;
-  color:white;
-}
+body {background:#0a0a0a;color:white;font-family:Arial;margin:0;}
+.nav {display:flex;justify-content:space-between;padding:15px 30px;background:#000;}
+.nav a {color:white;text-decoration:none;margin-left:15px;}
 
-/* NAVBAR */
-.nav {
-  position: sticky;
-  top: 0;
-  display:flex;
-  justify-content:space-between;
-  padding:15px 30px;
-  background:rgba(0,0,0,0.85);
-}
+.form-box {max-width:400px;margin:50px auto;}
 
-.nav a {
-  color:white;
-  text-decoration:none;
-  margin-left:15px;
-}
-
-/* HERO */
-.hero {
-  text-align:center;
-  padding:100px 20px;
-  background:linear-gradient(135deg,#111,#000);
-}
-
-/* FORM */
-.form-box {
-  max-width:500px;
-  margin:40px auto;
-}
-
-input, textarea {
-  width:100%;
-  padding:12px;
-  margin-bottom:15px;
-  border-radius:8px;
-  border:none;
+input,textarea {
+width:100%;padding:10px;margin-bottom:10px;border-radius:5px;border:none;
 }
 
 button {
-  width:100%;
-  padding:12px;
-  background:red;
-  color:white;
-  border:none;
-  border-radius:25px;
-}
-
-/* FOOTER */
-.footer {
-  text-align:center;
-  padding:20px;
-  color:gray;
+width:100%;padding:10px;background:red;color:white;border:none;border-radius:20px;
 }
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <div class="nav">
   <h2>Flash Hub</h2>
   <div>
@@ -80,4 +32,16 @@ button {
   </div>
 </div>
 
-<!-- HERO
+<div class="form-box">
+  <h2>Contact Us</h2>
+
+  <form action="https://formsubmit.co/YOURMAIL@gmail.com" method="POST">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
+</body>
+</html>
