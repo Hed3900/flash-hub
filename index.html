@@ -348,10 +348,7 @@ body {
   </div>
 
 </div>
-  ,
-<div class="footer">
-  © 2026 Flash Hub
-</div>
+  
 <div class="bottom-nav">
   <a href="/">🏠<span>Home</span></a>
   <a href="/search/label/news">📰<span>News</span></a>
@@ -468,6 +465,32 @@ body {
     .footer-about {
   color: #bbb;
     }
+/* REMOVE GAP BETWEEN SECTIONS */
+.footer-links,
+.footer-links + * {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* FIX TEXT SECTION (FlashNews24 provides...) */
+.footer-description {
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+}
+
+/* REMOVE ALL EXTRA SPACE */
+.footer-links,
+.footer-description,
+.footer,
+#footer {
+  margin: 0 !important;
+}
+
+/* FORCE CLOSE GAP */
+.footer-links + div {
+  margin-top: 0 !important;
+      }
+
     </Style>
 </body>
 </html>
