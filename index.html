@@ -23,7 +23,7 @@
     </div>
     <script type='text/javascript'>
 //<![CDATA[
-fetch('/feeds/posts/default?alt=json&max-results=6')
+fetch('https://www.flasnews.24.site/feeds/posts/default?alt=json&max-results=6')
 .then(res => res.json())
 .then(data => {
   let posts = data.feed.entry;
