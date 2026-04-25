@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <div class="section">
-  <h2>Why Flash Hub?</h2>
-  <p>We provide fast, accurate and modern updates designed for today's audience.</p>
-  </div>
+  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
@@ -80,6 +77,49 @@ body {
   .cards {
   flex-wrap: wrap;
   }
+  .hero {
+  animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+  .section {
+  padding:80px 20px;
+  }
+  .nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255,0,0,0.3);
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: red;
+  text-shadow: 0 0 10px red;
+}
 </style>
 </head>
 
@@ -99,7 +139,10 @@ body {
   <p>Ultra Premium News Platform</p>
   <a href="#" class="btn">Explore</a>
 </div>
-
+<div class="section">
+  <h2>Why Flash Hub?</h2>
+  <p>We provide fast, accurate and modern updates designed for today's audience.</p>
+</div>
 <div class="section">
   <h2>Our Features</h2>
   <div class="cards">
