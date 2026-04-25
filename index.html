@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <div class="home-cat-grid">
+
+  <a href="/search/label/news" class="home-cat-item">
+    <div class="home-cat-icon">📰</div>
+    <div class="home-cat-text">News</div>
+  </a>
+
+  <a href="/search/label/jobs" class="home-cat-item">
+    <div class="home-cat-icon">💼</div>
+    <div class="home-cat-text">Jobs</div>
+  </a>
+
+  <a href="/search/label/tech" class="home-cat-item">
+    <div class="home-cat-icon">💻</div>
+    <div class="home-cat-text">Tech</div>
+  </a>
+
+  <a href="/search/label/world" class="home-cat-item">
+    <div class="home-cat-icon">🌍</div>
+    <div class="home-cat-text">World</div>
+  </a>
+
+    </div>
   
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -119,6 +142,38 @@ body {
 .menu a:hover {
   color: red;
   text-shadow: 0 0 10px red;
+}
+  .home-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 10px;
+}
+
+.home-cat-item {
+  background: #fff;
+  border-radius: 15px;
+  padding: 12px 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.home-cat-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.home-cat-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d10000;
 }
 </style>
 </head>
