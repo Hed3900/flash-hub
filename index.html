@@ -23,7 +23,7 @@
     </div>
     <script type='text/javascript'>
 //<![CDATA[
-fetch('https://www.flasnews.24.site/feeds/posts/default?alt=json&max-results=6')
+fetch('https://www.flashnews24.site/feeds/posts/default?alt=json&max-results=6')
 .then(res => res.json())
 .then(data => {
   let posts = data.feed.entry;
@@ -46,6 +46,31 @@ fetch('https://www.flasnews.24.site/feeds/posts/default?alt=json&max-results=6')
 });
 //]]>
     </script>
+    <ul id="latest-posts"></ul>
+
+<script>
+fetch('https://www.flashnews24.site/feeds/posts/default?alt=json')
+.then(res => res.json())
+.then(data => {
+  let posts = data.feed.entry;
+  let html = '';
+
+  for(let i=0; i<5; i++){
+    let title = posts[i].title.$t;
+    let link = posts[i].link.find(l => l.rel === 'alternate').href;
+
+    html += `
+      <li style="margin:10px 0;">
+        <a href="${link}" style="text-decoration:none; color:black; font-weight:bold;">
+          📰 ${title}
+        </a>
+      </li>
+    `;
+  }
+
+  document.getElementById("latest-posts").innerHTML = html;
+});
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
