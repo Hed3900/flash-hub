@@ -262,6 +262,61 @@ body {
   font-weight: bold;
   color: #222;
 }
+  .top-stories {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-top: 10px;
+}
+
+.post-card {
+  min-width: 260px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.post-title {
+  font-weight: bold;
+  color: #d10000;
+  font-size: 15px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.post-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.post-content img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.post-text {
+  font-size: 13px;
+  color: #444;
+}
+
+.read-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #ff0000, #ff4d4d);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  }
 </style>
 </head>
 
@@ -293,7 +348,56 @@ body {
     <div class="card">🔒 Trusted Info</div>
   </div>
 </div>
+<h2 style="border-left:5px solid red;padding-left:10px;">
+  🔥 Top Stories
+</h2>
 
+<div class="top-stories">
+
+  <div class="post-card">
+    <div class="post-title">AI Technology Future 2026</div>
+    <div class="post-date">April 2026</div>
+
+    <div class="post-content">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfAI" onerror="this.src='https://via.placeholder.com/80'"/>
+      <div class="post-text">
+        New AI tools are changing the future of work and technology...
+      </div>
+    </div>
+
+    <a href="/search/label/Tech" class="read-btn">Read Full News →</a>
+  </div>
+
+  <div class="post-card">
+    <div class="post-title">Breaking News Update</div>
+    <div class="post-date">Today</div>
+
+    <div class="post-content">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfNews" onerror="this.src='https://via.placeholder.com/80'"/>
+      <div class="post-text">
+        Major breaking incident reported. Stay tuned for updates...
+      </div>
+    </div>
+
+    <a href="/search/label/breaking%20news" class="read-btn">Read Full News →</a>
+  </div>
+
+  <div class="post-card">
+    <div class="post-title">Instagram Growth Tips 2026</div>
+    <div class="post-date">Latest</div>
+
+    <div class="post-content">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfInsta" onerror="this.src='https://via.placeholder.com/80'"/>
+      <div class="post-text">
+        Learn how to grow your Instagram page fast in 2026...
+      </div>
+    </div>
+
+    <a href="/2026/04/tips-to-grow-instagram-page.html" class="read-btn">Read Full News →</a>
+  </div>
+
+</div>
+  ,
 <div class="footer">
   © 2026 Flash Hub
 </div>
