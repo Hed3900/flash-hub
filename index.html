@@ -400,6 +400,40 @@ body {
 <div class="footer">
   © 2026 Flash Hub
 </div>
+<div class="bottom-nav">
+  <a href="/">🏠<span>Home</span></a>
+  <a href="/search/label/news">📰<span>News</span></a>
+  <a href="/search/label/jobs">💼<span>Jobs</span></a>
+  <a href="/search/label/tech">💻<span>Tech</span></a>
+  <a href="#">👤<span>Profile</span></a>
+</div>
+  <style>
+    .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  z-index: 9999;
+}
 
+.bottom-nav a {
+  color: red;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.bottom-nav a span {
+  display: block;
+  font-size: 11px;
+}
+    body {
+  padding-bottom: 90px;
+  }
+    </Style>
 </body>
 </html>
